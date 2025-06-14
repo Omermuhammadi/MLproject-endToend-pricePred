@@ -4,14 +4,23 @@ FROM python:3.9-slim
 # Set the working directory in the container to /app
 WORKDIR /app
 
-# Copy the current directory contents into the container at /app
-COPY . .
+# Copy backend requirements first (better layer caching)
+COPY ./backend/requirements.txt /app/requirements.txt
 
 # Install any needed packages specified in requirements.txt
 RUN pip install --no-cache-dir --upgrade -r requirements.txt
 
+# Copy backend application code
+COPY ./backend/app /app/app
+
+# Copy frontend files
+COPY ./frontend /app/frontend
+
+# Copy ML models
+COPY ./models /app/models
+
 # Make port 8000 available to the world outside this container
 EXPOSE 8000
 
-# Run app.py when the container launches
+# Command to run the application
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]

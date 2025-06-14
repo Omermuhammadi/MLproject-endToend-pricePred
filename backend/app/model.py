@@ -4,7 +4,8 @@ import pandas as pd
 from pathlib import Path
 
 # Path to the model file, assuming the script is run from the project root
-MODEL_PATH = Path(__file__).parent.parent.parent / "models" / "best_model_SVM_20250614_191042.pkl"
+# Two levels up from this file yields /app
+MODEL_PATH = Path(__file__).resolve().parent.parent / "models" / "best_model_SVM_20250614_191042.pkl"
 
 model = None
 
