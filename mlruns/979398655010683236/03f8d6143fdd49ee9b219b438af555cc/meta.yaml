@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Lenovo/Downloads/mlruns/979398655010683236/03f8d6143fdd49ee9b219b438af555cc/artifacts
+end_time: 1749901316816
+entry_point_name: ''
+experiment_id: '979398655010683236'
+lifecycle_stage: active
+run_id: 03f8d6143fdd49ee9b219b438af555cc
+run_name: SVM
+run_uuid: 03f8d6143fdd49ee9b219b438af555cc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749901316725
+status: 3
+tags: []
+user_id: Lenovo

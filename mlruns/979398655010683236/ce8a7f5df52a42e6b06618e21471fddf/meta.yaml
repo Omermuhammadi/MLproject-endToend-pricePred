@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Lenovo/Downloads/mlruns/979398655010683236/ce8a7f5df52a42e6b06618e21471fddf/artifacts
+end_time: 1749910170112
+entry_point_name: ''
+experiment_id: '979398655010683236'
+lifecycle_stage: active
+run_id: ce8a7f5df52a42e6b06618e21471fddf
+run_name: XGBoost
+run_uuid: ce8a7f5df52a42e6b06618e21471fddf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749910156217
+status: 3
+tags: []
+user_id: Lenovo

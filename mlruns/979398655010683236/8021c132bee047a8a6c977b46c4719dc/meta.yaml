@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Lenovo/Downloads/mlruns/979398655010683236/8021c132bee047a8a6c977b46c4719dc/artifacts
+end_time: 1749910238737
+entry_point_name: ''
+experiment_id: '979398655010683236'
+lifecycle_stage: active
+run_id: 8021c132bee047a8a6c977b46c4719dc
+run_name: Gradient_Boosting
+run_uuid: 8021c132bee047a8a6c977b46c4719dc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749910206893
+status: 3
+tags: []
+user_id: Lenovo

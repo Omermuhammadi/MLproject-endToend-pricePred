@@ -1,0 +1,17 @@
+
+Mobile Price Classification - Best Model Information
+=====================================================
+Model Name: Logistic_Regression
+Timestamp: 20250614_170605
+Accuracy: 0.9725
+Precision: 0.9727
+Recall: 0.9725
+F1-Score: 0.9725
+CV Accuracy: 0.9550 (+/- 0.0085)
+Training Time: 0.33 seconds
+
+Model Parameters:
+{'C': 1.0, 'class_weight': None, 'dual': False, 'fit_intercept': True, 'intercept_scaling': 1, 'l1_ratio': None, 'max_iter': 1000, 'multi_class': 'deprecated', 'n_jobs': None, 'penalty': 'l2', 'random_state': 42, 'solver': 'lbfgs', 'tol': 0.0001, 'verbose': 0, 'warm_start': False}
+
+Feature Names:
+['battery_power', 'px_height', 'px_width', 'ram']

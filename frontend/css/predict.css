@@ -1,0 +1,246 @@
+/* predict.css */
+
+:root {
+    --rich-black: #020122;
+    --indigo-dye: #00416A;
+    --space-cadet: #1A1B41;
+    --cyber-grape: #542E71;
+    --electric-purple: #C749F8;
+    --light-text: #F0F0F0;
+    --secondary-text: #a9a9b3;
+    --glow-color: rgba(199, 73, 248, 0.8);
+    --card-bg: rgba(26, 27, 65, 0.4);
+    --border-color: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, var(--rich-black), var(--space-cadet));
+    color: var(--light-text);
+    margin: 0;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin: 1rem 0;
+    background: -webkit-linear-gradient(45deg, #eee, var(--electric-purple));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: var(--secondary-text);
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: var(--secondary-text);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: var(--electric-purple);
+}
+
+#prediction-form {
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--secondary-text);
+    font-size: 0.9rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    color: var(--light-text);
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: var(--electric-purple);
+    box-shadow: 0 0 15px rgba(199, 73, 248, 0.5);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: var(--electric-purple);
+    color: var(--light-text);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 20px var(--glow-color);
+}
+
+.submit-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 30px var(--glow-color);
+}
+
+/* Result Section */
+#result-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#result-section.hidden {
+    display: none;
+}
+
+#result-content.hidden {
+    display: none;
+}
+
+.result-summary {
+    background: var(--card-bg);
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    border: 1px solid var(--border-color);
+}
+
+.result-summary p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.result-summary strong {
+    color: var(--electric-purple);
+    font-weight: 600;
+}
+
+.recommendations h3 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* Spinner */
+.spinner-container {
+    padding: 50px;
+}
+.spinner {
+    border: 6px solid rgba(255, 255, 255, 0.2);
+    border-left-color: var(--electric-purple);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Recommendation Card Styles */
+.recommendation-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.recommendation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-image-container {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card-image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 200px; /* Set a max-height to keep cards from getting too tall */
+    object-fit: contain; /* This ensures the entire image fits */
+    margin: 0 auto;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h4 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    color: var(--electric-purple);
+}
+
+.card-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: var(--secondary-text);
+}
+
+.card-content ul li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    body { padding: 20px 10px; }
+    header h1 { font-size: 2.2rem; }
+    .form-grid { grid-template-columns: 1fr; }
+}

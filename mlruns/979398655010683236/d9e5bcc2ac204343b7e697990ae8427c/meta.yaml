@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Lenovo/Downloads/mlruns/979398655010683236/d9e5bcc2ac204343b7e697990ae8427c/artifacts
+end_time: 1749901413507
+entry_point_name: ''
+experiment_id: '979398655010683236'
+lifecycle_stage: active
+run_id: d9e5bcc2ac204343b7e697990ae8427c
+run_name: Random_Forest
+run_uuid: d9e5bcc2ac204343b7e697990ae8427c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749901413423
+status: 3
+tags: []
+user_id: Lenovo

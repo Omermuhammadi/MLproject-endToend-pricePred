@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Lenovo/Downloads/mlruns/979398655010683236/65583d7f9c874964b43368998debc5fb/artifacts
+end_time: 1749902428764
+entry_point_name: ''
+experiment_id: '979398655010683236'
+lifecycle_stage: active
+run_id: 65583d7f9c874964b43368998debc5fb
+run_name: Decision_Tree
+run_uuid: 65583d7f9c874964b43368998debc5fb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749902418260
+status: 3
+tags: []
+user_id: Lenovo

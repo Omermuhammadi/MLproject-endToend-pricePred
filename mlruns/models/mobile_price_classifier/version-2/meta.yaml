@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1749910249533
+current_stage: None
+description: null
+last_updated_timestamp: 1749910249533
+name: mobile_price_classifier
+run_id: 91757cb77410447dbac5af04816e788d
+run_link: null
+source: file:///C:/Users/Lenovo/Downloads/mlruns/979398655010683236/91757cb77410447dbac5af04816e788d/artifacts/best_model
+status: READY
+status_message: null
+storage_location: file:///C:/Users/Lenovo/Downloads/mlruns/979398655010683236/91757cb77410447dbac5af04816e788d/artifacts/best_model
+user_id: null
+version: 2

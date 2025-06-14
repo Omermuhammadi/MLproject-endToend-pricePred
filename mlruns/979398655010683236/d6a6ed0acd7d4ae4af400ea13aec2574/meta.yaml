@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Lenovo/Downloads/mlruns/979398655010683236/d6a6ed0acd7d4ae4af400ea13aec2574/artifacts
+end_time: 1749901413989
+entry_point_name: ''
+experiment_id: '979398655010683236'
+lifecycle_stage: active
+run_id: d6a6ed0acd7d4ae4af400ea13aec2574
+run_name: Naive_Bayes
+run_uuid: d6a6ed0acd7d4ae4af400ea13aec2574
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749901413903
+status: 3
+tags: []
+user_id: Lenovo
