@@ -41,7 +41,7 @@ mobile_price_project/
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/Omermuhammadi/MLproject-endToend-pricePred
 cd mobile_price_project
 ```
 
